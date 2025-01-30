@@ -1,5 +1,5 @@
 import 'next-auth'
-import { DefaultSession } from 'next-auth';
+// import { DefaultSession } from 'next-auth';
 
 // Our user and next auth's user are difference. So here we redefine user
 declare module 'next-auth' {
@@ -15,7 +15,7 @@ declare module 'next-auth' {
             _id?: string;
             isVerified?: boolean;
             isAcceptingMessages?: boolean;
-            username?: string
+            username?: string;
         } & DefaultSession['user']
     }
 

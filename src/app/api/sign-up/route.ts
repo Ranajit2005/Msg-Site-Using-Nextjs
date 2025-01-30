@@ -33,7 +33,7 @@ export async function POST(request:Request) {
                 return Response.json({
                     success: false,
                     message: "User already exist with this email and user is already verified"
-                },{ status: 4000 })
+                },{ status: 400 })
 
             }else{
 
